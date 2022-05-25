@@ -16,7 +16,42 @@
     <header>
         <nav id="logo">
             <h1>LOGO</h1>
-            <div id="burger"><i class="fa-solid fa-bars"></i></div>
+            <div id="burger"><i class="fa-solid fa-bars"></i>    
+            </div>
+        </nav>
+        <nav id="menuburger">
+            <ul>
+                <a href="">
+                    <li>Shirts</li>
+                </a>
+                <a href="">
+                    <li>Dresses</li>
+                </a>
+                <a href="">
+                    <li>Jeans</li>
+                </a>
+                <a href="">
+                    <li>Jackets</li>
+                </a>
+                <a href="">
+                    <li>Gymwear</li>
+                </a>
+                <a href="">
+                    <li>Blazers</li>
+                </a>
+                <a href="">
+                    <li>Shoes</li>
+                </a>
+                <a href="">
+                    <li>Contact</li>
+                </a>
+                <a href="">
+                    <li>Newletter</li>
+                </a>
+                <a href="">
+                    <li>Subscribe</li>
+                </a>
+            </ul>
         </nav>
         <nav id="sousmenu">
             <h2>Jeans</h2>
@@ -30,9 +65,9 @@
 
     <main>
         <section id="caroussel">
-                <h3>New arrivals</h3>
-                <p>COLLECTION 2016</p>
-                <button type="submit">Shop now</button>
+            <h3>New arrivals</h3>
+            <p>COLLECTION 2016</p>
+            <button type="submit">Shop now</button>
         </section>
 
         <p class="items">8 items</p>
@@ -43,6 +78,7 @@
                 <p>$24.99</p>
             </div>
             <div class="cards">
+                <div class="badge">New</div>
                 <img src="./assets/img/jeans2.jpg" alt="">
                 <p class="style">Mega Skinny Jeans</p>
                 <p>$19.99</p>
@@ -68,6 +104,7 @@
                 <p>$14.99</p>
             </div>
             <div class="cards">
+                <div class="badge">Sale</div>
                 <img src="./assets/img/jeans1.jpg" alt="">
                 <p class="style">Ripped Skinny Jeans</p>
                 <p>$24.99</p>
@@ -86,33 +123,85 @@
             <div>
                 <input type="text" placeholder="Enter e-mail" name="email" required>
             </div>
-                <button type="submit">Subscribe</i></button>
+            <button type="submit">Subscribe</i></button>
         </section>
 
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Question ? Go ahead.</p>
-            <div>
-                <input type="text" placeholder="Name" name="name" required>
+        <section id="infos">
+            <div class="contact">
+                <h2>Contact</h2>
+                <p>Question ? Go ahead.</p>
+                <div>
+                    <input type="text" placeholder="Name" name="name" required>
+                </div>
+                <div>
+                    <input type="text" placeholder="Email" name="email" required>
+                </div>
+                <div>
+                    <input type="text" placeholder="Subject" name="subject" required>
+                </div>
+                <div>
+                    <input type="text" placeholder="Message" name="message" required>
+                </div>
+                <div>
+                    <input type="submit" value="Send" name="submited" id="send">
+                </div>
             </div>
             <div>
-                <input type="text" placeholder="Email" name="email" required>
+                <h2>About</h2>
+                <ul>
+                    <a href="">
+                        <li>About us</li>
+                    </a>
+                    <a href="">
+                        <li>We're hiring</li>
+                    </a>
+                    <a href="">
+                        <li>Support</li>
+                    </a>
+                    <a href="">
+                        <li>Find store</li>
+                    </a>
+                    <a href="">
+                        <li>Shipment</li>
+                    </a>
+                    <a href="">
+                        <li>Payment</li>
+                    </a>
+                    <a href="">
+                        <li>Gift card</li>
+                    </a>
+                    <a href="">
+                        <li>Return</li>
+                    </a>
+                    <a href="">
+                        <li>Help</li>
+                    </a>
+                </ul>
             </div>
-            <div>
-                <input type="text" placeholder="Subject" name="subject" required>
-            </div>
-            <div>
-                <input type="text" placeholder="Message" name="message" required>
-            </div>
-            <div>
-                <input type="submit" value="Send" name="submited" id="send">
+            <div class="store">
+                <h2>Store</h2>
+                <p><i class="fa-solid fa-location-dot"></i> Compagny</p>
+                <p><i class="fa-solid fa-phone-flip"></i> 0044123123</p>
+                <p><i class="fa-solid fa-envelope"></i> ex@mail.com</p>
+                <h2>We accept</h2>
+                <p><i class="fa-brands fa-cc-amex"></i> Amex</p>
+                <p><i class="fa-solid fa-credit-card"></i> Crédit Card</p>
+                <div id="social">
+                    <i class="fa-brands fa-facebook-square"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-snapchat"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
             </div>
         </section>
 
 
     </main>
-    <footer></footer>
+    <footer>
+        <p>Powered by</p>
 </body>
 
 </html>

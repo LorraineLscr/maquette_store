@@ -1,22 +1,22 @@
 @font-face {
-    font-family: "montserrat" ;
+    font-family: "montserrat";
     src: url(../font/Montserrat-Regular.ttf);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: "montserrat", sans-serif; 
+    font-family: "montserrat", sans-serif;
 }
 
-section{
+section {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
 
 /* HEADER */
 
-#logo{
+#logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,35 +26,35 @@ section{
     padding: 0 0.5rem;
 }
 
-#burger{
+#burger {
     margin: 0.5rem;
 }
 
-h1{
+h1 {
     padding: 0.5rem;
 }
 
-#sousmenu{
+#sousmenu h2 {
+    margin-left: 0.5rem;
+}
+
+#sousmenu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 1.5rem;
-}
-
-h2{
-    padding: 1rem;
-}
-
-#sousmenu button{
-    border: none;
-    background-color: white;
-    font-size: 1.5rem;
     margin-right: 1rem;
 }
 
-/* SECTION caroussel */ 
+#sousmenu button {
+    border: none;
+    background-color: white;
+    font-size: 1.5rem;
+}
 
-#caroussel{
+/* SECTION caroussel */
+
+#caroussel {
     height: 30vh;
     background-image: url(../img/jeans.jpg);
     background-position: center;
@@ -63,22 +63,22 @@ h2{
     margin-bottom: 1rem;
 }
 
-h3{
+h3 {
     color: white;
     font-size: 2.5rem;
     padding-bottom: 1rem;
-padding-top: 3rem;
-padding-left: 1.5rem;
+    padding-top: 3rem;
+    padding-left: 1.5rem;
 }
 
-#caroussel p{
+#caroussel p {
     color: white;
     font-size: 1.3rem;
     padding-bottom: 1rem;
     padding-left: 1.5rem;
 }
 
-#caroussel button{
+#caroussel button {
     background-color: black;
     color: white;
     font-size: 1rem;
@@ -87,72 +87,226 @@ padding-left: 1.5rem;
     border: none;
 }
 
-/* SECTION cardsjeans */ 
+/* SECTION cardsjeans */
 
-.items{
-    color: grey;
+.items {
+    color: #c4c4c4;
     margin-left: 0.5rem;
 }
 
-#cardsjeans{
+#cardsjeans {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
 
-#cardsjeans img{
+.badge {
+    background-color: black;
+    color: white;
+    position: absolute;
+    padding: 0.5rem;
+}
+
+#cardsjeans img {
     width: 100%;
 }
 
-.cards{
+.cards {
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
-    width: 12rem;
+    align-items: flex-start;
+    width: 11rem;
     margin-top: 1rem;
 }
 
-.cards p{
+.cards p {
     font-size: 1.3rem;
 }
 
-.style{
+.style {
     color: grey;
     margin-top: 1rem;
 }
 
 /* SECTION subscribe */
 
-#subscribe{
+#subscribe {
     background-color: black;
     color: white;
     padding: 2rem 1rem;
+    box-sizing: border-box;
 }
 
-#subscribe h2{
+#subscribe h2 {
     font-size: 2.5rem;
+    padding: 2rem 0;
 }
 
-#subscribe p{
-    font-size: 1.5rem;
-    padding-bottom: 0.5rem;
+#subscribe p {
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
 }
 
-#subscribe input{
+#subscribe input {
     width: 100%;
     border: none;
     padding: 1rem;
 }
 
-#subscribe button{
+#subscribe button {
     background-color: red;
     border: none;
     color: white;
     padding: 1rem;
     font-size: 1.5rem;
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
 }
 
-/* SECTION contact */
 
+
+/* SECTION infos */
+
+#infos {
+    background-color: #c4c4c4;
+    color: rgba(0, 0, 0, 0.537);
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#infos h2 {
+    color: rgba(0, 0, 0, 0.537);
+    font-size: 2rem;
+}
+
+#infos li {
+    color: black;
+    padding: 0.5rem;
+    list-style-type: none;
+}
+
+#infos input {
+    width: 100%;
+    border: none;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    padding: 0.5rem;
+}
+
+#send {
+    background-color: black;
+    color: white;
+}
+
+#infos i {
+    font-size: 1.5rem;
+}
+
+#infos p {
+    padding: 1rem;
+}
+
+#social {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.contact {
+    width: 100%;
+}
+
+.contact div {
+    margin: 0.8rem;
+}
+
+/* SECTION FOOTER */
+
+footer p {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    font-size: 1.3rem;
+}
+
+@media screen and (min-width:576px) {
+
+    /* SECTION HEADER */
+
+    #burger {
+        display: none;
+    }
+
+    header{
+        display: flex;
+    }
+
+    #menuburger{
+        position: absolute;
+        width: 30%;
+        top: 10rem;
+        left: 1rem;
+    }
+
+    #menuburger ul{
+        list-style-type: none;
+    }
+
+    #menuburger a{
+        text-decoration: none;
+    }
+
+    #logo{
+        background-color: white;
+        color: black;
+        width: 30%;
+    }
+
+    #sousmenu{
+        width: 70%;
+        padding: 0;
+    }
+
+    section, .items{
+        width: 70%;
+        margin-left: auto;
+    }
+
+    /* SECTION MAIN */
+
+    #caroussel {
+        height: 60vh;
+    }
+
+    .cards {
+        width: 24%;
+    }
+
+    .cards p {
+        font-size: 1rem;
+    }
+
+    #infos {
+        flex-wrap: nowrap;
+        background-color: #f1f1f1;
+    }
+
+    .contact {
+        width: 33%;
+    }
+
+    .store {
+        text-align: left;
+    }
+
+    
+
+}
