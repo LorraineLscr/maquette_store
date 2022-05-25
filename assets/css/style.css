@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "montserrat" ;
+    src: url(../font/Montserrat-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif; 
+}
+
+section{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+/* HEADER */
+
+#logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    padding: 0 0.5rem;
+}
+
+#burger{
+    margin: 0.5rem;
+}
+
+h1{
+    padding: 0.5rem;
+}
+
+#sousmenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+h2{
+    padding: 1rem;
+}
+
+#sousmenu button{
+    border: none;
+    background-color: white;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+/* SECTION caroussel */ 
+
+#caroussel{
+    height: 30vh;
+    background-image: url(../img/jeans.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1rem;
+}
+
+h3{
+    color: white;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+padding-top: 3rem;
+padding-left: 1.5rem;
+}
+
+#caroussel p{
+    color: white;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+#caroussel button{
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    border: none;
+}
+
+/* SECTION cardsjeans */ 
+
+.items{
+    color: grey;
+    margin-left: 0.5rem;
+}
+
+#cardsjeans{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#cardsjeans img{
+    width: 100%;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    width: 12rem;
+    margin-top: 1rem;
+}
+
+.cards p{
+    font-size: 1.3rem;
+}
+
+.style{
+    color: grey;
+    margin-top: 1rem;
+}
+
+/* SECTION subscribe */
+
+#subscribe{
+    background-color: black;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+#subscribe h2{
+    font-size: 2.5rem;
+}
+
+#subscribe p{
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#subscribe input{
+    width: 100%;
+    border: none;
+    padding: 1rem;
+}
+
+#subscribe button{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+/* SECTION contact */
+
