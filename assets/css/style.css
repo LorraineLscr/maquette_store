@@ -152,7 +152,7 @@ h3 {
 
 #subscribe input {
     width: 100%;
-    border: none;
+    box-sizing: border-box;
     padding: 1rem;
 }
 
@@ -247,13 +247,15 @@ footer p {
 
     header{
         display: flex;
+        width: 80%;
+        margin:auto;
     }
 
     #menuburger{
         position: absolute;
         width: 30%;
         top: 10rem;
-        left: 1rem;
+        left: 9rem; 
     }
 
     #menuburger ul{
@@ -262,6 +264,7 @@ footer p {
 
     #menuburger a{
         text-decoration: none;
+        color: black;
     }
 
     #logo{
@@ -273,6 +276,7 @@ footer p {
     #sousmenu{
         width: 70%;
         padding: 0;
+       
     }
 
     section, .items{
@@ -281,6 +285,11 @@ footer p {
     }
 
     /* SECTION MAIN */
+
+    main{
+        width: 80%;
+        margin: auto;
+    }
 
     #caroussel {
         height: 60vh;
